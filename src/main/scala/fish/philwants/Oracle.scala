@@ -55,7 +55,7 @@ object GitHubClient extends LazyLogging with DefaultJsonProtocol {
   }
 
   def uri_search_code(searchTerm: String, repo: String): String = {
-    s"https://api.github.com/search/code?q=$searchTerm+repo:$repo&client_id=${"4cb2a4ee4e50bd7adc49"}&client_secret=${"7f2522a17e7358014c83a9f2118258764a9a3990"}"
+    s"https://api.github.com/search/code?q=$searchTerm+repo:$repo"
   }
 
 
